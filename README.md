@@ -35,21 +35,9 @@ python lab2.py
 
 The program will initiate the node's participation in the group, handle elections, and manage leader failures and recovery.
 
-## Files and Structure
-
-- `lab2.py`: Main driver program implementing the Bully algorithm for leader election.
-- `gcd.py`: Contains the Group Coordinator Daemon (GCD) functionality for managing group membership and communications.
-- `node.py`: Represents a node in the group, including functionalities for joining, initiating elections, responding to messages, and recovering from failures.
-- `message.py`: Defines message structures and protocols for communication between nodes.
-- `utils.py`: Utility functions used throughout the application.
-
 ## Protocol
 
 The application follows a message-based protocol for communication between nodes, including JOIN, ELECTION, COORDINATOR, and PROBE messages.
-
-## Extra Credit
-
-- Feigning Failure: Nodes can simulate failure by closing sockets or ignoring messages for a random duration, then recover and resume normal operation.
 
 ## Contributions
 
